@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TSP</title>
+</head>
+
+<body>
+    <div id="menu">
+        <div class="button" id="select-algorithm"><a id="select-algorithm-text">Select Algorithm</a><div id="algorithms">
+                <div onClick="selectAlgorithm('Random Brute Force')">Random Brute Force</div>
+                <div onClick="selectAlgorithm('Nearest Neighbor')">Nearest Neighbor</div>
+                <div onClick="selectAlgorithm('Greedy')">Greedy</div>
+                <div onClick="selectAlgorithm('Nearest Insertion')">Nearest Insertion</div>
+                <div onClick="selectAlgorithm('Furthest Insertion')">Furthest Insertion</div>
+                <div onClick="selectAlgorithm('Cheapest Insertion')">Cheapest Insertion</div>
+                <div onClick="selectAlgorithm('Minimum Spanning Tree')">Minimum Spanning Tree</div>
+                <div onClick="selectAlgorithm('Christofides')">Christofides</div>
+            </div>
+        </div>
+        <div id="controls" class="container"><i id="play-button" class="material-icons"
+                style="font-size:32px;color:white">play_arrow</i><i id="reset-button" class="material-icons"
+                style="font-size:32px;color:white">replay</i><input type="range" min="1" max="2001" value="1000"
+                class="slider" id="speed-slider">
+        </div>
+        <div class="container">Total Weight:<br /><span id="distance-span">0</span></div>
+        <div class="container">Edge Weight:<input id="edge-distance" type="text" /></div>
+        <div class="button" id="clear-button">Clear Nodes</div>
+    </div>
+    <canvas id="canvas">
+</body>
+
+</html>
+<script src="methods.js"></script>
+<script src="minimum_spanning_tree.js"></script>
+<script src="christofides.js"></script>
+<script src="random_brute_force.js"></script>
+<script src="nearest_neighbor.js"></script>
+<script src="greedy.js"></script>
+<script src="cheapest_insertion.js"></script>
+<script src="nearest_insertion.js"></script>
+<script src="furthest_insertion.js"></script>
+<script src="app.js"></script>
+<script src="step.js"></script>
+<script src="draw.js"></script>
