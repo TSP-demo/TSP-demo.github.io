@@ -26,6 +26,8 @@ var nodeRadius = 32;
 var startingNode = 0;
 var routeDistance = 0;
 
+window.prompt("example?","input")
+
 const edgeInputHandler = (e) => {
   for (var i = 0; i < edges.length; i++) {
     if (
