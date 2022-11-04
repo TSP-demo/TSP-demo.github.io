@@ -27,7 +27,7 @@ var startingNode = 0;
 var routeDistance = 0;
 
 window.addEventListener("load",()=>{
-  let response = window.prompt("example?","input")
+  let response = prompt("example?","input")
 })
 
 const edgeInputHandler = (e) => {
