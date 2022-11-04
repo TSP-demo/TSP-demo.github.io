@@ -26,9 +26,6 @@ var nodeRadius = 32;
 var startingNode = 0;
 var routeDistance = 0;
 
-window.addEventListener("load", ()=>{
-  let response = prompt("example?","input");
-})
 
 const edgeInputHandler = (e) => {
   for (var i = 0; i < edges.length; i++) {
@@ -99,6 +96,7 @@ const sliderInputHandler = (e) => {
 
 edgeDistanceInput.addEventListener("input", edgeInputHandler);
 playButton.addEventListener("mousedown", () => {
+  let response = prompt("example?","input");
   if (playing) {
     pause();
   } else {
