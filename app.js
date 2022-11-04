@@ -26,8 +26,8 @@ var nodeRadius = 32;
 var startingNode = 0;
 var routeDistance = 0;
 
-document.addEventListener("load",()=>{
-  let response = prompt("example?","input")
+window.addEventListener("load", ()=>{
+  let response = prompt("example?","input");
 })
 
 const edgeInputHandler = (e) => {
