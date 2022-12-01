@@ -96,7 +96,6 @@ const sliderInputHandler = (e) => {
 
 edgeDistanceInput.addEventListener("input", edgeInputHandler);
 playButton.addEventListener("mousedown", () => {
-  let response = prompt("example?","input");
   if (playing) {
     pause();
   } else {
